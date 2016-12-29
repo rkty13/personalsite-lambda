@@ -87,3 +87,7 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Sass generated files/folders
+.sass-cache/
+*.css.map
