@@ -120,7 +120,7 @@
       </div>
       <hr />
       <div id="footer">
-        <p id="scrobble">Currently listening to <span id="scrobble_title">...</span> by <span id="scrobble_artist">...</span>.</p>
+        <p id="scrobble"><span id="scrobble_pre">Currently listening to</span> <span id="scrobble_title">...</span> by <span id="scrobble_artist">...</span>.</p>
         <p>Copyright © 2016 Robert Kim. Made with <span id="heart">&lt;3</span>, <span id="coffee">coffee</span>, and <span id="sleep">sleep</span> in <span>New York</span>.</p>
       </div>
     </div>
@@ -132,13 +132,11 @@
       if (request.status >= 200 && request.status < 400) {
         var data = JSON.parse(request.responseText);
         var recent = data.recenttracks.track[0];
-        if (recent.hasOwnProperty("@attr")) {
-          document.getElementById("scrobble_title").textContent = recent.name;
-          document.getElementById("scrobble_artist").textContent = recent.artist["#text"];
-        } else {
-          console.error("Current track could not be loaded.");
-          document.getElementById("scrobble").innerHTML = "Not listening to any music at the moment.";
+        if (!recent.hasOwnProperty("@attr")) {
+          document.getElementById("scrobble_pre").textContent = "Most recently listened to";
         }
+        document.getElementById("scrobble_title").textContent = recent.name;
+        document.getElementById("scrobble_artist").textContent = recent.artist["#text"];
       } else {
         console.error("Current track could not be loaded.");
         document.getElementById("scrobble").innerHTML = "Not listening to any music at the moment.";
