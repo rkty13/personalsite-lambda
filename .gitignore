@@ -95,3 +95,6 @@ ENV/
 
 # Zappa configurations
 zappa_settings.json
+
+# Configurations
+config.py
