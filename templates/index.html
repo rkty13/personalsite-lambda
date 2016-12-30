@@ -5,8 +5,148 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="{{ host }}/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   </head>
   <body>
-    Hello world.
+    <div class="content">
+      <div id="intro">
+        <h1>Hi, I'm Robert Kim.</h1>
+        <p>
+          <a href="/resume.pdf">Resume</a> | 
+          <a href="/blog">Blog</a> | 
+          <a href="https://github.com/rkty13">Github</a> | 
+          <a href="mailto:me@robertkim.io">Email</a>
+        </p>
+      </div>
+      <div id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <p><span><a href="https://github.com/rkty13/matrox">matrox</a>: </span>Linear Algebra library written in Python. Follows Gilbert Strang's textbook, "Linear Algebra and Its Applications, 4th Edition".</p>
+            <ul>
+              <li><p><span>(Oct. '16 - Present)</span></p></li>
+            </ul>
+          </li>
+          <li>
+            <p><span><a href="https://github.com/hackBCA">hackBCA</a>: </span>Websites and tools for hackBCA, one of the first and largest high school hackathons on the east coast.</p>
+            <ul>
+              <li><p><span>(Oct. '14 - Apr. '16)</span></p></li>
+              <li><p><a href="https://2016.hackbca.com">hackBCA III Website</a></p></li>
+              <li><p><a href="http://2015.hackbca.com">hackBCA II Website</a></p></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div id="experience">
+        <h2>Experience</h2>
+        <ul>
+          <li>
+            <p><span><a href="www.hackbca.com">hackBCA</a>: </span>Director of Technology</p>
+            <ul>
+              <li><p><span>(Dec. 2013 - Jun. 2016)</span></p></li>
+              <li><p>Board member in charge of tech team for hackBCA, tasked with designing and building the hackBCA website and all relevant tools.</p></li>
+            </ul>
+          </li>
+          <li>
+            <p><span><a href="http://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=22397">Perry Capital LLC</a>: </span>Programming Intern</p>
+            <ul>
+              <li><p><span>(Sep. '15 - May. '16)</span></p></li>
+              <li><p>Created central aggregation functions and stored procedures for Form PF reports using MSSQL.</p></li>
+            </ul>
+          </li>
+          <li>
+            <p><span><a href="http://www.medialets.com">Medialets</a>: </span>Software Engineering Intern</p>
+            <ul>
+              <li><p><span>(Jul. '15 - Aug. '15)</span></p></li>
+              <li><p>Created a B.I. dashboard for internal company statistics using d3.js and Flask.</p></li>
+            </ul>
+          </li>
+          <li>
+            <p><span><a href="http://www.blacklapel.com">Black Lapel</a>: </span>Web Development Intern</p>
+            <ul>
+              <li><p><span>(Jul. '14 - Aug. '14)</span></p></li>
+              <li><p>Created redesigns of website's pages using front end technologies and maintained legacy code.</p></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div id="education">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            <div class="school">
+              <h4>New York University</h4>
+              <p>2016 - 2020 (expected)</p>
+              <ul>
+                <li><p>Pursuing B.S. in Computer Science</p></li>
+                <li><p><span>Relevant Coursework: </span>Data Structures, Object Oriented Programming, Discrete Mathematics, Calculus II</p></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="school">
+              <h4>Bergen County Academies</h4>
+              <p>2012 - 2016</p>
+              <ul>
+                <li><p><a href="https://bcts.bergen.org/index.php/about-us/academy-programs/academy-for-telecommunications-and-computer-science">Academy for Technology and Computer Science</a></p></li>
+                <li><p><span>Relevant Coursework: </span>Data Structures &amp; Algorithms, Linear Algebra &amp; Differential Equations, AP Computer Science, AP Calculus AB, Data Structures CS</p></li>
+                <li><p><span>Relevant Electives: </span>Processors, Computer Security, Linux Shell Programming, Artificial Intelligence</p></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>
+            <h4>Languages</h4>
+            <ul>
+              <li><p><span>Proficient: </span>Python, HTML, CSS, Javascript, SQL, Java, Bash</p></li>
+              <li><p><span>Familiar: </span>C++, PHP, 6502 Assembly</p></li>
+            </ul>
+          </li>
+          <li>
+            <h4>Technologies</h4>
+            <ul>
+              <li><p><span>Proficient: </span>Flask, Git, Bootstrap, MongoDB, SSH, Sass, SQLAlchemy, Node.js, Twilio API, Heroku, Sendgrid API</p></li>
+              <li><p><span>Familiar: </span>Nginx, Angular 2, Express.js, Amazon EC2/S3, d3.js, Android SDK, Zombie.js, Socket.io, Logisim</p></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div id="footer">
+        <p id="scrobble">Currently listening to <span id="scrobble_title">...</span> by <span id="scrobble_artist">...</span>.</p>
+        <p>Copyright © 2016 Robert Kim. Made with <span id="heart">&lt;3</span>, <span id="coffee">coffee</span>, and <span><strike>sleep</strike></span> in <span>New York</span>.</p>
+      </div>
+    </div>
   </body>
+  <script type="text/javascript">
+    var request = new XMLHttpRequest();
+    request.open("GET", "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=rkty13&api_key={{ scrobble_key }}&format=json&limit=1", true);
+    request.onload = function() {
+      if (request.status >= 200 && request.status < 400) {
+        var data = JSON.parse(request.responseText);
+        var recent = data.recenttracks.track[0];
+        if (recent.hasOwnProperty("@attr")) {
+          document.getElementById("scrobble_title").textContent = recent.name;
+          document.getElementById("scrobble_artist").textContent = recent.artist["#text"];
+        } else {
+          document.getElementById.innerHTML = "Not listening to any music at the moment.";
+        }
+      } else {
+        console.error("Current track could not be loaded.");
+        document.getElementById.innerHTML = "Not listening to any music at the moment.";
+      }
+    };
+    request.onerror = function() {
+      console.error("Current track could not be loaded.");
+      document.getElementById.innerHTML = "Not listening to any music at the moment.";
+    };
+    request.send();
+  </script>
 </html>

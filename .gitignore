@@ -91,6 +91,7 @@ ENV/
 # Sass generated files/folders
 .sass-cache/
 *.css.map
+*.css
 
 # Zappa configurations
 zappa_settings.json
