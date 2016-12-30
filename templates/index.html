@@ -136,16 +136,17 @@
           document.getElementById("scrobble_title").textContent = recent.name;
           document.getElementById("scrobble_artist").textContent = recent.artist["#text"];
         } else {
-          document.getElementById.innerHTML = "Not listening to any music at the moment.";
+          console.error("Current track could not be loaded.");
+          document.getElementById("scrobble").innerHTML = "Not listening to any music at the moment.";
         }
       } else {
         console.error("Current track could not be loaded.");
-        document.getElementById.innerHTML = "Not listening to any music at the moment.";
+        document.getElementById("scrobble").innerHTML = "Not listening to any music at the moment.";
       }
     };
     request.onerror = function() {
       console.error("Current track could not be loaded.");
-      document.getElementById.innerHTML = "Not listening to any music at the moment.";
+      document.getElementById("scrobble").innerHTML = "Not listening to any music at the moment.";
     };
     request.send();
   </script>

@@ -98,3 +98,6 @@ zappa_settings.json
 
 # Configurations
 config.py
+
+# Resume
+resume.pdf
