@@ -19,7 +19,7 @@ def resume():
 
 @app.route("/blog")
 def blog():
-    return redirect("https://blog.robertkim.io")
+    return redirect("http://blog.robertkim.io")
 
 if __name__ == "__main__":
     app.run(debug = app.config["DEBUG"])
