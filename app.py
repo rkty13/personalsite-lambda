@@ -17,5 +17,9 @@ def index():
 def resume():
     return redirect("https://s3.amazonaws.com/rkty13-personalsite/resume.pdf")
 
+@app.route("/blog")
+def blog():
+    return redirect("https://blog.robertkim.io")
+
 if __name__ == "__main__":
     app.run(debug = app.config["DEBUG"])
