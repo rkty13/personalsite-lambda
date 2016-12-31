@@ -1,0 +1,9 @@
+{
+    "dev": {
+        "app_function": "app.app", 
+        "s3_bucket": "rkty13-personalsite",
+        "domain": "robertkim.io",
+        "lets_encrypt_key": "/Users/robertkim/.letsencrypt/robertkimio.key",
+        "lets_encrypt_expression": "rate(15 days)"
+    }
+}
