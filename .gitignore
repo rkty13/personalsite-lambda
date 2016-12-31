@@ -101,3 +101,5 @@ config.py
 
 # Resume
 resume.pdf
+
+.DS_Store
