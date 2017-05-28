@@ -15,7 +15,7 @@ def index():
 @app.route("/resume.pdf")
 @app.route("/resume")
 def resume():
-    return redirect("https://s3.amazonaws.com/rkty13-personalsite/resume.pdf")
+    return redirect("https://s3.amazonaws.com/rkty13-personalsite/RobertKimResume.pdf")
 
 @app.route("/blog")
 def blog():
