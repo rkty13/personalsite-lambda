@@ -13,156 +13,38 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   </head>
   <body>
-    <div class="content">
-      <div id="intro">
-        <h1 id="hello"></h1>
-        <p>
-          <a href="/resume.pdf">Resume</a> | 
-          <a href="http://blog.robertkim.io">Blog</a> | 
-          <a href="https://github.com/rkty13">Github</a> | 
-          <a href="mailto:me@robertkim.io">Email</a>
-        </p>
+    <div id="container">
+      <div id="content">
+        <div id="intro">
+          <h1 id="hello">Hi, I'm Robert Kim!</h1>
+          <p>
+            | <a href="/resume.pdf">Resume</a> | 
+            <a href="http://blog.robertkim.io">Blog</a> | 
+            <a href="https://github.com/rkty13">Github</a> | 
+            <a href="https://linkedin.com/in/roberttykim">Linkedin</a> | 
+            <a href="mailto:me@robertkim.io">Email</a> |
+          </p>
+        </div>
+        <section>
+          <p>I'm a full stack software engineer based in Brooklyn, New York. I enjoy listening to many genres of <a href="https://open.spotify.com/user/124613413">music</a> (currently digging Julie London) and exploring new areas of the city. I am passionate about learning, and I work hard to get things done.</p>
+          <p>Feel free to get in touch with me through email!</p>
+        </section>
+        <hr />
+        <footer>
+          <p id="scrobble"><span id="scrobble_pre">Currently listening to</span> <span id="scrobble_title">...</span> by <span id="scrobble_artist">...</span>.</p>
+          <p id="copyright">Copyright © 2017 Robert Kim. Made with <span id="heart">&lt;3</span>, <span id="coffee">coffee</span>, and <span id="sleep">sleep</span> in <span>New York</span>.</p>
+        </footer>
       </div>
-      <section id="projects">
-        <h2 class="header" id="projects">Projects</h2>
-        <ul>
-          <li>
-            <p><span><a href="https://github.com/rkty13/matrox">matrox</a>: </span>Linear Algebra library written in Python. Follows Gilbert Strang's textbook, "Linear Algebra and Its Applications, 4th Edition".</p>
-            <ul>
-              <li><p><span>(Oct. '16 - Present)</span></p></li>
-            </ul>
-          </li>
-          <li>
-            <p><span><a href="https://github.com/hackBCA">hackBCA</a>: </span>Websites and tools for hackBCA, one of the first and largest high school hackathons on the east coast.</p>
-            <ul>
-              <li><p><span>(Oct. '14 - Apr. '16)</span></p></li>
-              <li><p><a href="https://2016.hackbca.com">hackBCA III Website</a></p></li>
-              <li><p><a href="http://2015.hackbca.com">hackBCA II Website</a></p></li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-
-      <section id="experience">
-        <h2 class="header" id="experience">Experience</h2>
-        <ul>
-          <li>
-            <p><span><a href="https://usebask.com">Bask</a>: </span>Head of Engineering</p>
-            <ul>
-              <li><p><span>(Apr. 2017 - Present)</span></p></li>
-              <li><p>Building a product to improve the lives of millions of students and classrooms around the world.</p></li>
-              <li><p>Developing features to integrate Bask with Learning Management Systems.</p></li>
-              <li><p>Building accessibility and 508-compliant features to serve those with disabilities.</p></li>
-            </ul>
-          </li>
-          <li>
-            <p><span><a href="https://github.com/NYU-TMI">New York University</a>: </span>Undergraduate Research Assistant</p>
-            <ul>
-              <li><p><span>(Feb. 2017 - Aug. 2017)</span></p></li>
-              <li><p>Working on Professor Oded Nov’s Human Computer Interaction and Personal Genomics Exploration project.</p></li>
-              <li><p>Developing interfaces to explore how they affect decision making when saving for retirement.</p></li>
-              <li><p>Working on an experiment to improve retirement savings through better asset allocations over time.</p></li>
-            </ul>
-          </li>
-          <li>
-            <p><span><a href="www.hackbca.com">hackBCA</a>: </span>Director of Technology</p>
-            <ul>
-              <li><p><span>(Dec. 2013 - Jun. 2016)</span></p></li>
-              <li><p>Board member in charge of tech team for hackBCA, tasked with designing and building the hackBCA website and all relevant tools.</p></li>
-            </ul>
-          </li>
-          <li>
-            <p><span><a href="http://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=22397">Perry Capital LLC</a>: </span>Programming Intern</p>
-            <ul>
-              <li><p><span>(Sep. '15 - May. '16)</span></p></li>
-              <li><p>Created central aggregation functions and stored procedures for Form PF reports using MSSQL.</p></li>
-            </ul>
-          </li>
-          <li>
-            <p><span><a href="http://www.medialets.com">Medialets</a>: </span>Software Engineering Intern</p>
-            <ul>
-              <li><p><span>(Jul. '15 - Aug. '15)</span></p></li>
-              <li><p>Created a B.I. dashboard for internal company statistics using d3.js and Flask.</p></li>
-            </ul>
-          </li>
-          <li>
-            <p><span><a href="http://www.blacklapel.com">Black Lapel</a>: </span>Web Development Intern</p>
-            <ul>
-              <li><p><span>(Jul. '14 - Aug. '14)</span></p></li>
-              <li><p>Created redesigns of website's pages using front end technologies and maintained legacy code.</p></li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-
-      <section id="education">
-        <h2 class="header" id="education">Education</h2>
-        <ul>
-          <li>
-            <div class="school">
-              <h4>New York University</h4>
-              <p><span>2016 - 2020 (expected)</span></p>
-              <ul>
-                <li><p>Pursuing B.S. in Computer Science</p></li>
-                <li><p><span>Relevant Coursework: </span>Data Structures, Discrete Mathematics, Object Oriented Programming, Calculus II</p></li>
-                <li><p><span>Cumulative GPA: </span>3.800/4.000</p></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="school">
-              <h4>Bergen County Academies</h4>
-              <p><span>2012 - 2016</span></p>
-              <ul>
-                <li><p><a href="https://bcts.bergen.org/index.php/about-us/academy-programs/academy-for-telecommunications-and-computer-science">Academy for Technology and Computer Science</a></p></li>
-                <li><p><span>Relevant Coursework: </span>Data Structures &amp; Algorithms, Linear Algebra &amp; Differential Equations, AP Computer Science, AP Calculus AB, Data Structures CS</p></li>
-                <li><p><span>Relevant Electives: </span>Processors, Computer Security, Linux Shell Programming, Artificial Intelligence</p></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <section id="skills">
-        <h2 class="header" id="skills">Skills</h2>
-        <ul>
-          <li>
-            <h4>Languages</h4>
-            <ul>
-              <li><p><span>Proficient: </span>Javascript (ES6), Python, SQL, HTML, CSS</p></li>
-              <li><p><span>Familiar: </span>C++, PHP, Java, Bash</p></li>
-            </ul>
-          </li>
-          <li>
-            <h4>Technologies</h4>
-            <ul>
-              <li><p><span>Proficient: </span>React.js, Node.js, Express.js, Passport.js, Flask, Git</p></li>
-              <li><p><span>Familiar: </span>Webpack, Babel, Sass, MongoDB, Nginx</p></li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-      <hr />
-      <footer>
-        <p id="scrobble"><span id="scrobble_pre">Currently listening to</span> <span id="scrobble_title">...</span> by <span id="scrobble_artist">...</span>.</p>
-        <p>Copyright © 2017 Robert Kim. Made with <span id="heart">&lt;3</span>, <span id="coffee">coffee</span>, and <span id="sleep">sleep</span> in <span>New York</span>.</p>
-      </footer>
     </div>
   </body>
-  <script type="text/javascript">
-    // Minified from Justin Windle: https://codepen.io/soulwire/pen/mErPAK
-    "use strict";function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}var TextScramble=function(){function t(e){_classCallCheck(this,t),this.el=e,this.chars="!<>-_\\/[]{}—=+*^?#________",this.update=this.update.bind(this)}return t.prototype.setText=function(t){var e=this,a=this.el.innerText,r=Math.max(a.length,t.length),s=new Promise(function(t){return e.resolve=t});this.queue=[];for(var h=0;r>h;h++){var n=a[h]||"",i=t[h]||"",o=Math.floor(40*Math.random()),u=o+Math.floor(40*Math.random());this.queue.push({from:n,to:i,start:o,end:u})}return cancelAnimationFrame(this.frameRequest),this.frame=0,this.update(),s},t.prototype.update=function(){for(var t="",e=0,a=0,r=this.queue.length;r>a;a++){var s=this.queue[a],h=s.from,n=s.to,i=s.start,o=s.end,u=s["char"];this.frame>=o?(e++,t+=n):this.frame>=i?((!u||Math.random()<.28)&&(u=this.randomChar(),this.queue[a]["char"]=u),t+='<span class="dud">'+u+"</span>"):t+=h}this.el.innerHTML=t,e===this.queue.length?this.resolve():(this.frameRequest=requestAnimationFrame(this.update),this.frame++)},t.prototype.randomChar=function(){return this.chars[Math.floor(Math.random()*this.chars.length)]},t}();
-    var phrases = ["Hi, I'm Robert Kim!", "안녕, 나는 김태윤이야!"];
-    var fx = new TextScramble(document.getElementById("hello"));
-    var counter = 0;
-    var next = function next() {
-      fx.setText(phrases[counter]).then(function () {
-        setTimeout(next, 1200);
-      });
-      counter = (counter + 1) % phrases.length;
-    };
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57051667-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    next();
+    gtag('config', 'UA-57051667-2');
   </script>
   <script type="text/javascript">
     var request = new XMLHttpRequest();
